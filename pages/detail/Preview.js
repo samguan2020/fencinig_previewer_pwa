@@ -151,7 +151,7 @@ const format = (seconds) => {
 
 let count = 0;
 
-function Preview() {
+function Preview({url}) {
   const classes = useStyles();
   const [showControls, setShowControls] = useState(false);
   // const [count, setCount] = useState(0);
@@ -318,12 +318,12 @@ function Preview() {
 
   return (
     <>
-      <AppBar position="fixed">
+{/*       <AppBar position="fixed">
         <Toolbar>
           <Typography>React Video Player</Typography>
         </Toolbar>
       </AppBar>
-      <Toolbar />
+      <Toolbar /> */}
       <Container maxWidth="md">
         <div
           onMouseMove={handleMouseMove}
@@ -335,7 +335,7 @@ function Preview() {
             ref={playerRef}
             width="100%"
             height="100%"
-            url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+            url={url} //"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
             pip={pip}
             playing={playing}
             controls={false}
