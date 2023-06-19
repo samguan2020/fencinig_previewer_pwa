@@ -86,7 +86,9 @@ const Detail = ({ postDetails }: IProps) => {
         </div>
         <div className='relative'>
           <div className='lg:h-[100vh] h-[60vh]'>
-            <Preview/>
+            <Preview
+              url={post?.video?.asset.url}
+            />
 {/*             <video
               ref={videoRef}
               onClick={onVideoClick}
