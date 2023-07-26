@@ -98,6 +98,7 @@ function ValueLabelComponent(props) {
   );
 }
 
+// eslint-disable-next-line react/display-name
 const Controls = forwardRef(
   (
     {
