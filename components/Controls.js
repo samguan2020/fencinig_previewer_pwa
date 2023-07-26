@@ -100,7 +100,7 @@ function ValueLabelComponent(props) {
 
 // eslint-disable-next-line react/display-name
 const Controls = forwardRef(
-  (
+  ( 
     {
       onSeek,
       onSeekMouseDown,
@@ -125,10 +125,10 @@ const Controls = forwardRef(
       onBookmark,
     },
     ref
-  ) => {
+  ) => { 
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
-    const handleClick = (event) => {
+    const handleClick = (event) => { 
       setAnchorEl(event.currentTarget);
     };
 
@@ -336,6 +336,8 @@ const Controls = forwardRef(
     );
   }
 );
+
+Controls.displayName = "MyControls";
 
 Controls.propTypes = {
   onSeek: PropTypes.func,
